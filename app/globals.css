@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; color: #1a1a1a; }
+
+@layer components {
+  .section-heading { @apply text-3xl md:text-4xl font-bold text-dmc-black; }
+  .section-subheading { @apply text-dmc-green font-semibold text-sm uppercase tracking-widest mb-3; }
+  .btn-primary { @apply bg-dmc-green hover:bg-dmc-green-dark text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200; }
+  .btn-outline { @apply border-2 border-dmc-green text-dmc-green hover:bg-dmc-green hover:text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200; }
+}
